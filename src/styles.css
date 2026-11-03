@@ -9,3 +9,8 @@
 /* Official IVA identity */
 .va-logo img,.detail-logo img,.staff-avatar img{object-fit:contain}
 @media(max-width:760px){.brand-logo{width:34px;height:34px}.art-stamp img{width:64px;height:64px}.page-hero-mark img{width:72px;height:72px}.auth-globe img{width:100px;height:100px}}
+
+/* Remove the browser's blue tap/focus flash while preserving keyboard focus. */
+html, body, #root { -webkit-tap-highlight-color: transparent; }
+:where(a, button, [role="button"], input, select, textarea):focus:not(:focus-visible) { outline: none !important; box-shadow: none !important; }
+:where(a, button, [role="button"]):focus-visible { outline: 2px solid #8b6be8; outline-offset: 3px; }
