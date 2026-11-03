@@ -87,3 +87,16 @@ html, body, #root { -webkit-tap-highlight-color: transparent; }
 .page-hero>p{margin-left:auto;margin-right:auto}
 .page-hero>.page-number{text-align:center}
 @media(max-width:760px){.page-hero-mark{opacity:.28;right:-22px;top:72%}}
+
+
+/* Fluid, staggered mobile navigation reveal. */
+@media(max-width:760px){
+ .mobile-menu{display:block;overflow:hidden;transform-origin:top center;will-change:height,opacity,clip-path}
+ .mobile-menu-inner{display:flex;flex-direction:column;padding:10px 5% 18px}
+ .mobile-menu-inner>div{will-change:transform,opacity}
+ .mobile-menu a{transition:color .22s ease,padding-left .28s cubic-bezier(.22,1,.36,1)}
+ .mobile-menu a:active{color:#6428df;padding-left:7px}
+ .mobile-toggle{transition:background .22s ease,border-color .22s ease,color .22s ease}
+ .mobile-toggle:active{background:#f1ebfc;border-color:#d8c9f5;color:#6428df}
+}
+@media(prefers-reduced-motion:reduce){.mobile-menu,.mobile-menu-inner>div,.mobile-toggle{transition:none!important;animation:none!important}}
