@@ -18,3 +18,64 @@ html, body, #root { -webkit-tap-highlight-color: transparent; }
 
 /* White IVA mark on dark brand surfaces. */
 .brand-logo-inverted,.logo-on-dark{filter:brightness(0) invert(1) drop-shadow(0 3px 10px #0004)!important}
+
+
+/* About page: animated aviation feature and centered editorial layout. */
+.about-flight-scene{position:relative;display:grid;grid-template-columns:42% 58%;align-items:center;gap:20px;min-height:570px;padding:65px 9% 55px;background:radial-gradient(ellipse at 76% 48%,#4a1a9c 0%,#260866 42%,#171020 100%);color:#fff;overflow:hidden}
+.about-flight-scene:before{content:"";position:absolute;inset:0;background-image:linear-gradient(#ffffff09 1px,transparent 1px),linear-gradient(90deg,#ffffff09 1px,transparent 1px);background-size:56px 56px;mask-image:linear-gradient(90deg,transparent,#000 35%,#000)}
+.about-flight-copy{position:relative;z-index:2;max-width:470px}
+.about-flight-copy h2{font:500 clamp(43px,5vw,66px)/1.02 Manrope;letter-spacing:-3px;margin:25px 0 20px}
+.about-flight-copy h2 em{font-style:normal;color:#e85aa9}
+.about-flight-copy>p{max-width:390px;color:#d2c6e5;font-size:13px;line-height:1.9}
+.about-flight-meta{display:flex;gap:20px;flex-wrap:wrap;margin-top:35px;font:8px 'DM Mono';letter-spacing:1px;color:#ffffff9c}
+.about-flight-meta span:first-child{color:#fff}
+.about-flight-meta i,.about-flight-chip i{display:inline-block;width:7px;height:7px;border-radius:50%;background:#e85aa9;box-shadow:0 0 12px #e85aa9}
+.about-flight-visual{position:relative;width:min(100%,590px);height:430px;justify-self:center;display:grid;place-items:center}
+.about-flight-halo{position:absolute;width:330px;height:330px;border-radius:50%;background:radial-gradient(circle,#8a50e95c,transparent 70%);filter:blur(12px);animation:aboutHalo 6s ease-in-out infinite}
+.about-flight-globe{position:absolute;width:235px;height:235px;border-radius:50%;overflow:hidden;background:radial-gradient(circle at 32% 26%,#a9e8e1,#6786cf 27%,#38237f 67%,#160744 82%);box-shadow:inset -25px -28px 55px #090326,0 0 65px #a477ff55;animation:aboutGlobeFloat 7s ease-in-out infinite}
+.about-globe-grid{position:absolute;inset:-5%;border-radius:50%;background:repeating-linear-gradient(0deg,transparent 0 24px,#ffffff24 25px 26px),repeating-linear-gradient(90deg,transparent 0 24px,#ffffff20 25px 26px)}
+.about-land{position:absolute;background:#b3e4c6;opacity:.8}
+.land-a{width:38%;height:27%;left:15%;top:28%;border-radius:60% 30% 45% 25%;transform:rotate(-28deg)}
+.land-b{width:23%;height:40%;right:20%;bottom:17%;border-radius:40% 55% 35% 50%;transform:rotate(25deg)}
+.about-flight-orbit{position:absolute;border:1px solid #d4b9ff55;border-radius:50%;pointer-events:none}
+.orbit-a{width:430px;height:155px;transform:rotate(-25deg)}
+.orbit-b{width:485px;height:220px;transform:rotate(34deg);border-style:dashed;animation:aboutOrbit 35s linear infinite}
+.orbit-c{width:360px;height:300px;transform:rotate(72deg);border-color:#ffffff20}
+.about-flight-plane{position:absolute;left:calc(50% + 188px);top:calc(50% - 95px);width:42px;height:42px;border:1px solid #ffffff70;border-radius:50%;background:#321078;color:#fff;display:grid;place-items:center;box-shadow:0 8px 30px #08021c88;animation:aboutPlane 12s ease-in-out infinite}
+.about-flight-node{position:absolute;width:8px;height:8px;border-radius:50%;background:#f3b7df;box-shadow:0 0 18px #f3b7df}
+.node-a{left:14%;top:29%}.node-b{right:13%;bottom:24%;background:#b7a0ff}
+.about-flight-chip{position:absolute;display:flex;align-items:center;gap:10px;background:#fff;color:#241637;border-radius:9px;padding:11px 13px;box-shadow:0 14px 38px #08021c66;animation:aboutChip 5s ease-in-out infinite}
+.about-flight-chip b{font:9px 'DM Mono';letter-spacing:.5px}.about-flight-chip small{display:block;font:10px 'DM Sans';color:#888;margin-top:3px}
+.about-flight-chip>span{width:29px;height:29px;border-radius:8px;background:#f1eaff;color:#6129d8;display:grid;place-items:center}
+.chip-a{right:0;bottom:18%}.chip-b{left:2%;top:14%;font:8px 'DM Mono';letter-spacing:.7px;animation-delay:-2s}
+.about-flight-foot{grid-column:1/-1;position:relative;z-index:1;display:flex;justify-content:space-between;border-top:1px solid #ffffff25;padding-top:16px;font:8px 'DM Mono';letter-spacing:1.1px;color:#ffffff85}
+@keyframes aboutOrbit{to{rotate:360deg}}
+@keyframes aboutGlobeFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-11px)}}
+@keyframes aboutHalo{0%,100%{opacity:.65;transform:scale(.94)}50%{opacity:1;transform:scale(1.08)}}
+@keyframes aboutPlane{0%,100%{transform:translate(0,0) rotate(18deg)}25%{transform:translate(-255px,55px) rotate(110deg)}50%{transform:translate(-290px,205px) rotate(195deg)}75%{transform:translate(-80px,220px) rotate(280deg)}}
+@keyframes aboutChip{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.about-section-kicker{text-align:center}.about-section-kicker .eyebrow{justify-content:center}.about-section-kicker small{display:block;margin-top:18px;color:#aaa4b2;font:9px 'DM Mono'}
+.story-section{grid-template-columns:1fr;gap:30px;text-align:center}
+.story-section .story-body{max-width:900px;margin:0 auto}
+.story-section .story-body h2{margin-left:auto;margin-right:auto}
+.story-section .story-body>p{max-width:720px;margin-left:auto;margin-right:auto}
+.story-section .principles{text-align:left}
+.about-cta{display:flex;flex-direction:column;align-items:center;text-align:center;gap:22px}
+.about-cta .eyebrow{justify-content:center}
+.about-cta h2{font:500 clamp(40px,4.5vw,58px)/1.05 Manrope;letter-spacing:-2.5px;margin:17px 0 10px}
+.about-cta h2 em{font-style:normal;color:#6227df}
+.about-cta p{max-width:470px;margin:0 auto;color:#77717e;font-size:12px;line-height:1.8}
+@media(max-width:760px){
+ .about-flight-scene{grid-template-columns:1fr;gap:10px;padding:55px 7% 25px}
+ .about-flight-copy{text-align:center;margin:auto}
+ .about-flight-copy .eyebrow{justify-content:center}
+ .about-flight-copy>p{margin:0 auto}
+ .about-flight-meta{justify-content:center;margin-top:22px}
+ .about-flight-visual{height:330px;width:100%;overflow:visible;transform:scale(.82);transform-origin:center}
+ .about-flight-foot{font-size:7px;gap:10px}
+ .about-flight-chip.chip-a{right:-3%}
+ .about-flight-chip.chip-b{left:-3%}
+ .story-section{gap:24px}
+ .story-section .principles{text-align:left}
+}
+@media(prefers-reduced-motion:reduce){.about-flight-orbit,.about-flight-globe,.about-flight-halo,.about-flight-plane,.about-flight-chip{animation:none!important}}
