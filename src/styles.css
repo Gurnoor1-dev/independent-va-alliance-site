@@ -208,3 +208,13 @@ html, body, #root { -webkit-tap-highlight-color: transparent; }
 .event-edit-button:hover{background:#f0eafd;border-color:#c9b5eb}
 .event-form-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
 @media(max-width:600px){.event-admin-row{align-items:flex-start}.event-edit-button{padding:8px 10px}}
+
+/* High-performance event detail overlay: avoid expensive backdrop filters and scale paints. */
+.event-modal-backdrop{background:rgba(19,11,32,.82);backdrop-filter:none!important;-webkit-backdrop-filter:none!important;overscroll-behavior:contain;isolation:isolate}
+.event-modal{overscroll-behavior:contain;-webkit-overflow-scrolling:touch;contain:layout paint;transform:translateZ(0);backface-visibility:hidden}
+.event-modal-image>img{will-change:auto;transform:none!important}
+.event-modal-close{cursor:pointer;transition:background .16s ease,color .16s ease,transform .16s ease}
+.event-modal-close:hover{background:#f3edfc;color:#5b25d4;transform:rotate(4deg)}
+.event-card-image>img{content-visibility:auto}
+@media(max-width:600px){.event-modal-backdrop{align-items:flex-end;padding:0;background:rgba(14,8,24,.84)}.event-modal{width:100%;max-height:min(92dvh,900px);border-radius:18px 18px 0 0;padding-bottom:env(safe-area-inset-bottom);box-shadow:0 -12px 50px #08041155}.event-modal-image{aspect-ratio:16/8}.event-modal-body{padding:22px 20px 26px}.event-modal-description{line-height:1.75}}
+@media(prefers-reduced-motion:reduce){.event-modal-backdrop,.event-modal,.event-modal-close{transition:none!important;animation:none!important}}
