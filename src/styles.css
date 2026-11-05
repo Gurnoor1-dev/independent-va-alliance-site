@@ -135,3 +135,10 @@ html, body, #root { -webkit-tap-highlight-color: transparent; }
 .dashboard-signout{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid #e5dfea;background:#fff;color:#4c3b5d;border-radius:7px;padding:10px 14px;font:600 10px 'DM Sans';cursor:pointer;transition:background .2s ease,border-color .2s ease,color .2s ease,transform .2s ease}
 .dashboard-signout:hover{background:#f5f0fb;border-color:#cbb8e7;color:#5c27c9;transform:translateY(-1px)}
 @media(max-width:760px){.dashboard-account-actions{margin-top:18px}.dashboard-account-actions .dash-badge{margin-top:0}}
+
+
+/* Events archive */
+.past-events{margin-top:88px;padding-top:48px;border-top:1px solid var(--line,#e8e4eb)}
+.past-events-heading{margin-bottom:24px}
+.past-events-heading h2{margin:10px 0 8px}
+.past-events-heading p{color:var(--muted,#777);margin:0}
