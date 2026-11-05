@@ -113,3 +113,18 @@ html, body, #root { -webkit-tap-highlight-color: transparent; }
 .footer-credit a{color:#fff;text-decoration:underline;text-decoration-color:#a78be8;text-underline-offset:4px;transition:color .2s ease}
 .footer-credit a:hover{color:#c5a8ff}
 @media(max-width:760px){.va-operations-panel{grid-template-columns:1fr}.va-operations-panel>div{padding:16px 18px}.va-operations-panel>div+div{border-left:0;border-top:1px solid #e6dfed}.footer-credit{width:100%}}
+
+
+/* Application status: reviewer feedback table */
+.reviewer-feedback{max-width:1000px;margin:38px auto 22px}
+.reviewer-feedback-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin:0 0 18px}
+.reviewer-feedback-head h2{font:600 27px Manrope;letter-spacing:-1px;margin:12px 0 6px}
+.reviewer-feedback-head p{font-size:12px;color:#77717e;margin:0;line-height:1.7}
+.review-count{flex:none;border:1px solid #e8e2ef;background:#fff;border-radius:999px;padding:8px 12px;font:9px 'DM Mono';letter-spacing:.7px;color:#6b5a7c}
+.reviewer-feedback-table{max-width:none;overflow-x:auto}
+.reviewer-feedback-table .dash-table{min-width:760px}
+.reviewer-feedback-table .dash-table td{vertical-align:top}
+.reviewer-feedback-table .review-feedback-text{white-space:pre-wrap;min-width:240px;max-width:430px;line-height:1.7;color:#5f5966}
+.review-feedback-empty{display:flex;flex-direction:column;gap:6px;background:#fff;border:1px solid #e9e4ed;border-radius:10px;padding:22px;color:#716a78;font-size:12px;line-height:1.7}
+.review-feedback-empty b{font:600 13px Manrope;color:#2b2631}
+@media(max-width:760px){.reviewer-feedback{margin-top:30px}.reviewer-feedback-head{align-items:flex-start;flex-direction:column}.reviewer-feedback-head h2{font-size:23px}.reviewer-feedback-table{margin-left:-4px;margin-right:-4px}}
