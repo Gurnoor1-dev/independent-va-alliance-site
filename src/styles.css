@@ -128,3 +128,10 @@ html, body, #root { -webkit-tap-highlight-color: transparent; }
 .review-feedback-empty{display:flex;flex-direction:column;gap:6px;background:#fff;border:1px solid #e9e4ed;border-radius:10px;padding:22px;color:#716a78;font-size:12px;line-height:1.7}
 .review-feedback-empty b{font:600 13px Manrope;color:#2b2631}
 @media(max-width:760px){.reviewer-feedback{margin-top:30px}.reviewer-feedback-head{align-items:flex-start;flex-direction:column}.reviewer-feedback-head h2{font-size:23px}.reviewer-feedback-table{margin-left:-4px;margin-right:-4px}}
+
+
+/* Dashboard account controls */
+.dashboard-account-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.dashboard-signout{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid #e5dfea;background:#fff;color:#4c3b5d;border-radius:7px;padding:10px 14px;font:600 10px 'DM Sans';cursor:pointer;transition:background .2s ease,border-color .2s ease,color .2s ease,transform .2s ease}
+.dashboard-signout:hover{background:#f5f0fb;border-color:#cbb8e7;color:#5c27c9;transform:translateY(-1px)}
+@media(max-width:760px){.dashboard-account-actions{margin-top:18px}.dashboard-account-actions .dash-badge{margin-top:0}}
