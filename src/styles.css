@@ -289,3 +289,12 @@ html, body, #root { -webkit-tap-highlight-color: transparent; }
 @media(max-width:900px){.event-card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.event-modal{grid-template-columns:1fr;max-width:650px}.event-modal-image{height:auto;max-height:260px;aspect-ratio:16/9}.event-modal-body{padding:25px}}
 @media(max-width:600px){.event-card-grid{grid-template-columns:1fr;gap:14px}.event-card-image{max-height:210px}.event-card-copy{padding:16px}.event-card-copy h3{font-size:17px}.event-modal-backdrop{padding:12px}.event-modal{max-height:calc(100dvh - 24px);border-radius:11px}.event-modal-image{max-height:205px;aspect-ratio:16/9}.event-modal-body{padding:21px 18px}.event-modal-body h2{font-size:25px}.event-modal-description{margin:17px 0;font-size:11px}}
 @media(prefers-reduced-motion:reduce){.event-card{transition:none}}
+
+
+/* IFVARB directory metadata and staff counts. */
+.va-card-status{display:inline-flex;align-self:flex-start;margin-top:11px;padding:5px 8px;border:1px solid #e8e0f1;border-radius:5px;background:#faf8fd;color:#756b82;font:8px 'DM Mono';letter-spacing:.55px}
+.va-card:has(.va-card-status:first-of-type) .va-card-status{color:#5d35a2}
+.va-card-stats{flex-wrap:wrap;row-gap:7px}
+.staff-card>div:nth-child(2){min-width:0}
+.staff-card small{display:block;overflow-wrap:anywhere}
+@media(max-width:620px){.va-card-status{font-size:7px}.va-card-stats{gap:10px}.staff-card{padding:13px;gap:10px}.staff-status{font-size:7px}}
