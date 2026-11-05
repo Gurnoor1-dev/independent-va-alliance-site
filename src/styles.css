@@ -151,3 +151,6 @@ html, body, #root { -webkit-tap-highlight-color: transparent; }
 .site-settings-savebar>span{font-size:10px;color:#89818f}
 .site-settings-savebar .btn{white-space:nowrap}
 @media(max-width:760px){.site-settings-layout{grid-template-columns:1fr;gap:17px}.site-settings-layout>nav{display:grid;grid-template-columns:1fr 1fr}.site-settings-layout>nav button{padding:11px 9px;font-size:9px}.site-settings-fields,.site-settings-item-fields{grid-template-columns:1fr}.site-settings-head{display:block}.site-settings-head>span{display:inline-flex;margin-top:15px}.site-settings-editor-head{display:block}.site-settings-draft{display:block;margin-top:12px}.site-settings-savebar{align-items:stretch;flex-direction:column}.site-settings-savebar .btn{justify-content:center}.site-settings-array-head{align-items:flex-start}.site-settings-item{padding:11px}}
+
+/* Preserve the existing editorial heading rhythm when content is stored as editable text. */
+.intro-main h2,.stats-intro h2,.section-head h2,.manifesto-copy h2,.join-banner h2,.about-flight-copy h2,.story-body h2,.about-quote h2,.about-cta h2{white-space:pre-line}
