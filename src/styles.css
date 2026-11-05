@@ -115,3 +115,39 @@ html, body, #root { -webkit-tap-highlight-color: transparent; }
 @media(max-width:760px){.va-operations-panel{grid-template-columns:1fr}.va-operations-panel>div{padding:16px 18px}.va-operations-panel>div+div{border-left:0;border-top:1px solid #e6dfed}.footer-credit{width:100%}}
 
 
+
+/* Site Settings workspace */
+.site-settings{background:#fff;border:1px solid #e9e4ed;border-radius:12px;padding:clamp(18px,3vw,30px)}
+.site-settings-head{display:flex;justify-content:space-between;align-items:flex-start;gap:20px;padding-bottom:24px;border-bottom:1px solid #eeeaf2}
+.site-settings-head>div>small,.site-settings-editor-head small{font:8px 'DM Mono';letter-spacing:1px;color:#8d8299}
+.site-settings-head h2{font:600 29px Manrope;letter-spacing:-1px;margin:12px 0 8px;color:#261c31}
+.site-settings-head p{max-width:650px;font-size:12px;line-height:1.8;color:#77717e;margin:0}
+.site-settings-head>span{display:flex;align-items:center;gap:7px;background:#f3effa;color:#5b2ac2;border-radius:30px;padding:9px 12px;font:8px 'DM Mono';letter-spacing:.7px;white-space:nowrap}
+.site-settings-layout{display:grid;grid-template-columns:220px minmax(0,1fr);gap:22px;padding-top:24px}
+.site-settings-layout>nav{display:flex;flex-direction:column;gap:6px}
+.site-settings-layout>nav button{display:flex;align-items:center;justify-content:space-between;gap:8px;text-align:left;border:1px solid transparent;background:#faf9fc;color:#645c6d;border-radius:8px;padding:14px 13px;font-size:11px;transition:.2s}
+.site-settings-layout>nav button.active{background:#f0eafa;color:#5725c7;border-color:#dfd1f6;font-weight:700}
+.site-settings-editor{min-width:0}
+.site-settings-editor-head{display:flex;justify-content:space-between;align-items:flex-start;gap:15px;margin-bottom:20px}
+.site-settings-editor-head h3{font:600 21px Manrope;margin:7px 0;color:#261c31}
+.site-settings-editor-head p{font-size:11px;color:#817987;line-height:1.7;margin:0}
+.site-settings-draft{font:8px 'DM Mono';color:#7c7483;white-space:nowrap}
+.site-settings-fields{display:grid;grid-template-columns:1fr 1fr;gap:0 14px;padding:18px;background:#fbfaff;border:1px solid #eee9f4;border-radius:9px}
+.site-settings-fields label,.site-settings-item-fields label{display:flex;flex-direction:column;gap:7px;margin-bottom:13px;font:9px 'DM Mono';letter-spacing:.4px;color:#776c81}
+.site-settings-fields textarea,.site-settings-item-fields textarea{width:100%;resize:vertical;min-height:42px;padding:10px 11px;border:1px solid #e7e1ed;border-radius:6px;background:white;font:11px 'DM Sans';color:#342a3e;line-height:1.6}
+.site-settings-array{margin-top:22px}
+.site-settings-array-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:12px}
+.site-settings-array-head h4{font:600 17px Manrope;color:#2a2034;margin:6px 0}
+.site-settings-array-head h4 small{font:9px 'DM Mono';color:#958b9e;margin-left:5px}
+.site-settings-array-head>button{display:flex;align-items:center;gap:6px;border:1px solid #e2d7f1;background:#f7f2ff;color:#5c2ac3;border-radius:6px;padding:9px 11px;font-size:10px;font-weight:700}
+.site-settings-item{border:1px solid #ece7f0;border-radius:8px;padding:14px;margin-bottom:9px;background:#fff}
+.site-settings-item-top{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px}
+.site-settings-item-top>b{font:600 11px Manrope;color:#392d45}
+.site-settings-item-top>div{display:flex;gap:5px}
+.site-settings-item-top button{width:28px;height:27px;border:1px solid #e9e3ee;background:#fff;border-radius:5px;color:#766d80}
+.site-settings-item-top button:disabled{opacity:.3}
+.site-settings-item-fields{display:grid;grid-template-columns:1fr 1fr;gap:0 12px}
+.site-settings-savebar{position:sticky;bottom:0;display:flex;align-items:center;justify-content:space-between;gap:15px;padding:15px 0 0;margin-top:22px;border-top:1px solid #eeeaf2;background:#fff}
+.site-settings-savebar>span{font-size:10px;color:#89818f}
+.site-settings-savebar .btn{white-space:nowrap}
+@media(max-width:760px){.site-settings-layout{grid-template-columns:1fr;gap:17px}.site-settings-layout>nav{display:grid;grid-template-columns:1fr 1fr}.site-settings-layout>nav button{padding:11px 9px;font-size:9px}.site-settings-fields,.site-settings-item-fields{grid-template-columns:1fr}.site-settings-head{display:block}.site-settings-head>span{display:inline-flex;margin-top:15px}.site-settings-editor-head{display:block}.site-settings-draft{display:block;margin-top:12px}.site-settings-savebar{align-items:stretch;flex-direction:column}.site-settings-savebar .btn{justify-content:center}.site-settings-array-head{align-items:flex-start}.site-settings-item{padding:11px}}
