@@ -154,3 +154,14 @@ html, body, #root { -webkit-tap-highlight-color: transparent; }
 
 /* Preserve the existing editorial heading rhythm when content is stored as editable text. */
 .intro-main h2,.stats-intro h2,.section-head h2,.manifesto-copy h2,.join-banner h2,.about-flight-copy h2,.story-body h2,.about-quote h2,.about-cta h2{white-space:pre-line}
+
+/* Restore the dashboard's prominent, premium sign-out control. */
+.dashboard-account-actions{display:flex;align-items:center;justify-content:flex-end;gap:14px;flex-wrap:wrap}
+.dashboard-signout{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:43px;padding:0 18px;border:1px solid #e3d7f5;border-radius:7px;background:linear-gradient(135deg,#fff 0%,#f7f1ff 100%);color:#5424b9;font:700 10px 'DM Mono';letter-spacing:.45px;text-transform:uppercase;box-shadow:0 4px 14px rgba(76,37,132,.08),inset 0 1px 0 #fff;cursor:pointer;transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease,background .22s ease}
+.dashboard-signout svg{width:16px;height:16px;stroke-width:2.1;transition:transform .22s ease}
+.dashboard-signout:hover{transform:translateY(-2px);border-color:#bda4e8;background:linear-gradient(135deg,#f8f3ff 0%,#eee5ff 100%);box-shadow:0 8px 22px rgba(83,42,148,.16)}
+.dashboard-signout:hover svg{transform:translateX(2px)}
+.dashboard-signout:active{transform:translateY(0);box-shadow:0 2px 7px rgba(83,42,148,.12)}
+.dashboard-signout:focus-visible{outline:3px solid rgba(112,73,190,.22);outline-offset:3px}
+@media(max-width:640px){.dashboard-top{align-items:flex-start;gap:18px;flex-direction:column}.dashboard-account-actions{width:100%;justify-content:space-between}.dashboard-signout{min-height:40px;padding:0 14px}}
+@media(prefers-reduced-motion:reduce){.dashboard-signout,.dashboard-signout svg{transition:none}}
