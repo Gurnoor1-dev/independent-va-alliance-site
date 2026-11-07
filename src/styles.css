@@ -365,3 +365,5 @@ html, body, #root { -webkit-tap-highlight-color: transparent; }
  .staff-airline-coo{align-items:flex-start;flex-direction:column}
 }
 @media(prefers-reduced-motion:reduce){.staff-airline-section,.staff-directory-table tbody tr{transition:none}}
+
+.staff-empty-row{padding:24px 25px!important;color:#93899c!important;font-size:11px!important;text-align:center}
