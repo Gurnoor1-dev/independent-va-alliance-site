@@ -317,11 +317,11 @@ html, body, #root { -webkit-tap-highlight-color: transparent; }
 .staff-airline-identity{position:relative;z-index:1;min-width:0}
 .staff-airline-identity>small{color:#c9b6e8;font:8px 'DM Mono';letter-spacing:1.3px}
 .staff-airline-identity h3{margin:7px 0 12px;color:#fff;font:700 clamp(19px,2.5vw,26px)/1.2 Manrope;letter-spacing:-.7px;overflow-wrap:anywhere}
-.staff-airline-coo{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
-.staff-airline-coo>span{color:#c6b6dc;font:8px 'DM Mono';letter-spacing:.8px}
-.staff-airline-coo>a,.staff-airline-coo>b{display:inline-flex;align-items:center;gap:6px;color:#fff;font-size:11px;font-weight:700}
-.staff-airline-coo>a:hover{color:#e2caff}
-.staff-airline-coo>b{font-weight:500;color:#ffffffa8}
+.staff-airline-ceo{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.staff-airline-ceo>span{color:#c6b6dc;font:8px 'DM Mono';letter-spacing:.8px}
+.staff-airline-ceo>a,.staff-airline-ceo>b{display:inline-flex;align-items:center;gap:6px;color:#fff;font-size:11px;font-weight:700}
+.staff-airline-ceo>a:hover{color:#e2caff}
+.staff-airline-ceo>b{font-weight:500;color:#ffffffa8}
 .staff-airline-count{position:relative;z-index:1;margin-left:auto;display:flex;flex-direction:column;align-items:flex-end;flex-shrink:0}
 .staff-airline-count strong{color:#fff;font:600 36px/.95 Manrope;letter-spacing:-1.8px}
 .staff-airline-count span{margin-top:8px;color:#cbb9e5;font:8px 'DM Mono';letter-spacing:1px}
@@ -348,9 +348,9 @@ html, body, #root { -webkit-tap-highlight-color: transparent; }
  .staff-airline-brand>span{font-size:20px}
  .staff-airline-identity h3{font-size:18px;margin:6px 0 9px}
  .staff-airline-identity>small{font-size:7px}
- .staff-airline-coo{gap:5px}
- .staff-airline-coo>span{font-size:7px}
- .staff-airline-coo>a,.staff-airline-coo>b{font-size:10px}
+ .staff-airline-ceo{gap:5px}
+ .staff-airline-ceo>span{font-size:7px}
+ .staff-airline-ceo>a,.staff-airline-ceo>b{font-size:10px}
  .staff-airline-count strong{font-size:27px}
  .staff-airline-count span{font-size:7px}
  .staff-directory-table th{padding:12px 16px}
@@ -362,7 +362,7 @@ html, body, #root { -webkit-tap-highlight-color: transparent; }
  .staff-airline-identity h3{font-size:16px}
  .staff-airline-count strong{font-size:23px}
  .staff-airline-count span{font-size:6px;letter-spacing:.5px}
- .staff-airline-coo{align-items:flex-start;flex-direction:column}
+ .staff-airline-ceo{align-items:flex-start;flex-direction:column}
 }
 @media(prefers-reduced-motion:reduce){.staff-airline-section,.staff-directory-table tbody tr{transition:none}}
 
