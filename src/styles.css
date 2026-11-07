@@ -311,8 +311,8 @@ html, body, #root { -webkit-tap-highlight-color: transparent; }
 .staff-airline-section:hover{border-color:#d7c7ed;box-shadow:0 17px 42px rgba(36,18,58,.085)}
 .staff-airline-heading{position:relative;display:flex;align-items:center;gap:20px;min-height:146px;padding:25px 29px;color:#fff;background:radial-gradient(ellipse at 88% 0%,#7948c6 0%,transparent 45%),linear-gradient(112deg,#211044 0%,#35136c 55%,#4d218c 100%)}
 .staff-airline-heading:after{content:"";position:absolute;right:115px;top:-105px;width:250px;height:250px;border:1px solid #ffffff20;border-radius:50%;box-shadow:0 0 0 24px #ffffff08,0 0 0 50px #ffffff05;pointer-events:none}
-.staff-airline-brand{position:relative;z-index:1;display:grid;place-items:center;flex:0 0 88px;width:88px;height:88px;padding:10px;border:1px solid #ffffff35;border-radius:13px;background:#fff;box-shadow:0 9px 25px #10052540}
-.staff-airline-brand img{display:block;width:100%;height:100%;object-fit:contain}
+.staff-airline-brand{position:relative;z-index:1;display:grid;place-items:center;flex:0 0 88px;width:88px;height:88px;padding:10px;border:1px solid #ffffff35;border-radius:19px;background:#fff;box-shadow:0 9px 25px #10052540}
+.staff-airline-brand img{display:block;width:100%;height:100%;object-fit:contain;border-radius:11px}
 .staff-airline-brand>span{color:#5725a9;font:700 25px Manrope;letter-spacing:-1px}
 .staff-airline-identity{position:relative;z-index:1;min-width:0}
 .staff-airline-identity>small{color:#c9b6e8;font:8px 'DM Mono';letter-spacing:1.3px}
@@ -344,7 +344,7 @@ html, body, #root { -webkit-tap-highlight-color: transparent; }
  .staff-directory-intro>p{font-size:11px}
  .staff-airline-list{gap:17px}
  .staff-airline-heading{min-height:118px;gap:13px;padding:17px}
- .staff-airline-brand{flex-basis:66px;width:66px;height:66px;padding:8px;border-radius:10px}
+ .staff-airline-brand{flex-basis:66px;width:66px;height:66px;padding:8px;border-radius:15px}
  .staff-airline-brand>span{font-size:20px}
  .staff-airline-identity h3{font-size:18px;margin:6px 0 9px}
  .staff-airline-identity>small{font-size:7px}
