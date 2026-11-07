@@ -298,3 +298,69 @@ html, body, #root { -webkit-tap-highlight-color: transparent; }
 .staff-card>div:nth-child(2){min-width:0}
 .staff-card small{display:block;overflow-wrap:anywhere}
 @media(max-width:620px){.va-card-status{font-size:7px}.va-card-stats{gap:10px}.staff-card{padding:13px;gap:10px}.staff-status{font-size:7px}}
+
+/* Homepage featured VA discovery — premium collectible-card deck. */
+.discover-vas{position:relative;overflow:hidden;padding:88px max(7%,calc((100% - 1320px)/2));background:radial-gradient(ellipse at 82% 52%,#f0e8ff 0,transparent 42%),linear-gradient(145deg,#f8f6fc,#fff 58%,#f5f0fb);border-top:1px solid #eee8f4;border-bottom:1px solid #eee8f4}
+.discover-vas:before{content:"";position:absolute;right:-150px;top:-210px;width:470px;height:470px;border:1px solid #6d39bb16;border-radius:50%;box-shadow:0 0 0 35px #6d39bb08,0 0 0 75px #6d39bb05;pointer-events:none}
+.discover-heading{position:relative;z-index:1;display:flex;align-items:flex-end;justify-content:space-between;gap:25px;max-width:1320px;margin:0 auto 38px}
+.discover-heading h2{margin:15px 0 12px;color:#251b32;font:600 clamp(39px,4.5vw,59px)/1.04 Manrope;letter-spacing:-3px}
+.discover-heading h2 em{font-style:normal;color:#6b31cf}
+.discover-heading p{max-width:560px;margin:0;color:#776f80;font-size:12px;line-height:1.9}
+.discover-heading>.lv2-link{flex-shrink:0;margin:0 0 5px}
+.discover-deck{position:relative;z-index:1;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:15px;max-width:1320px;margin:0 auto;perspective:1200px}
+.discover-card{position:relative;display:flex;min-width:0;min-height:275px;flex-direction:column;align-items:flex-start;padding:17px 16px 15px;overflow:hidden;text-align:left;border:1px solid #e6deee;border-radius:13px;background:linear-gradient(155deg,#fff 0%,#fff 66%,#f7f2ff 100%);color:#2c2238;box-shadow:0 12px 25px #2913440c,0 2px 5px #29134408;transform:translateY(0);transform-origin:50% 85%;cursor:pointer;animation:discover-card-appear .55s cubic-bezier(.2,.8,.2,1) both;animation-delay:calc(var(--card-index) * 45ms);transition:transform .28s cubic-bezier(.2,.8,.2,1),border-color .25s ease,box-shadow .25s ease,background .25s ease}
+@keyframes discover-card-appear{from{opacity:0;transform:translateY(16px) scale(.975)}to{opacity:1;transform:translateY(0) scale(1)}}
+.discover-card:before{content:"";position:absolute;inset:0 0 auto;height:4px;background:linear-gradient(90deg,#5b24bd,#a86bea,#e2b2df)}
+.discover-card:after{content:"";position:absolute;width:150px;height:150px;right:-88px;top:85px;border:1px solid #6a35c51a;border-radius:50%;box-shadow:0 0 0 17px #6a35c508;pointer-events:none}
+.discover-card:hover,.discover-card:focus-visible{z-index:3;border-color:#bda4e3;box-shadow:0 22px 38px #30134b22,0 4px 10px #30134b12;background:#fff;transform:translateY(-7px) scale(1.015)}
+.discover-card:focus-visible{outline:3px solid #9a75d8;outline-offset:4px}
+.discover-card-index{color:#a096aa;font:7px 'DM Mono';letter-spacing:1px}
+.discover-card-logo{position:relative;z-index:1;display:grid;place-items:center;width:78px;height:78px;margin:21px auto 17px;align-self:center;border:1px solid #eee8f4;border-radius:18px;background:linear-gradient(145deg,#fff,#f7f3fc);box-shadow:0 8px 22px #26123b0d,inset 0 1px #fff}
+.discover-card-logo img{display:block;width:100%;height:100%;padding:10px;object-fit:contain}
+.discover-card-logo>span,.discover-modal-brand>span{display:grid;place-items:center;width:100%;height:100%;color:#fff;font:700 24px Manrope;letter-spacing:-1px;background:linear-gradient(145deg,#3b1679,#8b55d4);border-radius:inherit}
+.discover-card h3{position:relative;z-index:1;width:100%;margin:0;color:#2a2036;font:700 15px/1.25 Manrope;letter-spacing:-.45px;text-align:center;overflow-wrap:anywhere}
+.discover-card>p{width:100%;margin:6px 0 13px;color:#8a8191;font-size:9px;text-align:center}
+.discover-card-metrics{display:flex;justify-content:center;gap:12px;width:100%;margin-top:auto;padding:10px 0;border-top:1px solid #eee8f3;color:#857b8e;font-size:8px;white-space:nowrap}
+.discover-card-metrics span{display:flex;align-items:center;gap:4px}
+.discover-card-metrics b{color:#5c2bb0;font:700 12px Manrope}
+.discover-card-open{display:flex;align-items:center;justify-content:center;gap:7px;width:100%;padding-top:11px;color:#6029c1;font:7px 'DM Mono';letter-spacing:.85px}
+.discover-note{max-width:1320px;margin:16px auto 0;color:#8c8295;font-size:10px}
+.discover-modal-backdrop{position:fixed;inset:0;z-index:140;display:grid;place-items:center;padding:20px;background:#160b27b8;animation:discover-backdrop-in .24s ease-out both}
+.discover-modal{position:relative;width:min(510px,100%);max-height:calc(100dvh - 40px);overflow:auto;padding:27px 30px 30px;border:1px solid #ffffff55;border-radius:18px;background:radial-gradient(circle at 90% 15%,#eee4ff,transparent 40%),linear-gradient(150deg,#fff,#faf8fd);box-shadow:0 32px 100px #0c041c80;text-align:center;transform-origin:50% 55%;animation:discover-modal-in .42s cubic-bezier(.16,1,.3,1) both;will-change:transform,opacity}
+@keyframes discover-backdrop-in{from{opacity:0}to{opacity:1}}
+@keyframes discover-modal-in{0%{opacity:0;transform:translate3d(0,24px,0) scale(.94)}65%{opacity:1;transform:translate3d(0,-3px,0) scale(1.008)}100%{opacity:1;transform:translate3d(0,0,0) scale(1)}}
+
+.discover-modal-close{position:absolute;right:14px;top:14px;display:grid;place-items:center;width:35px;height:35px;border:1px solid #e8e0ee;border-radius:50%;background:#fff;color:#44344f;cursor:pointer;transition:transform .2s ease,background .2s ease}
+.discover-modal-close:hover{transform:rotate(90deg);background:#f3edfb}
+.discover-modal-top{display:flex;justify-content:space-between;gap:12px;padding-right:36px;color:#94889f;font:8px 'DM Mono';letter-spacing:.9px}
+.discover-modal-brand{display:grid;place-items:center;width:112px;height:112px;margin:27px auto 17px;border:1px solid #e9e1f0;border-radius:25px;background:#fff;box-shadow:0 12px 35px #2b164013;overflow:hidden}
+.discover-modal-brand img{width:100%;height:100%;padding:13px;object-fit:contain}
+.discover-modal h2{margin:0;color:#281d35;font:700 clamp(25px,5vw,34px)/1.12 Manrope;letter-spacing:-1.3px}
+.discover-modal-kind{margin:9px 0 0;color:#806f91;font-size:10px}
+.discover-modal-description{max-width:420px;margin:19px auto;color:#726a7a;font-size:11px;line-height:1.8}
+.discover-modal-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;margin:22px 0;background:#e9e1f0;border:1px solid #e9e1f0;border-radius:10px;overflow:hidden}
+.discover-modal-stats>div{display:flex;flex-direction:column;gap:5px;padding:15px 5px;background:#fff}
+.discover-modal-stats b{color:#5422aa;font:700 23px Manrope}
+.discover-modal-stats span{color:#8a8191;font-size:8px}
+.discover-modal-details{display:flex;justify-content:center;flex-wrap:wrap;gap:9px 18px;margin:0 0 22px;color:#746b7d;font-size:10px}
+.discover-modal-details span{display:flex;align-items:center;gap:6px}
+.discover-modal-details svg{color:#6834c1}
+.discover-profile-link{justify-content:center;width:100%}
+@media(max-width:1100px){.discover-deck{grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}.discover-card{min-height:260px;padding:15px 11px 13px}.discover-card-logo{width:68px;height:68px;margin:19px auto 15px}.discover-card h3{font-size:13px}.discover-card-metrics{gap:7px;font-size:7px}}
+@media(max-width:820px){.discover-vas{padding:65px 6%}.discover-deck{grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}.discover-card{min-height:255px}.discover-card h3{font-size:14px}.discover-card-metrics{font-size:8px}}
+@media(max-width:560px){.discover-vas{padding:55px 5%}.discover-heading{align-items:flex-start;flex-direction:column;gap:14px;margin-bottom:25px}.discover-heading h2{font-size:42px;letter-spacing:-2px}.discover-heading p{font-size:11px}.discover-deck{grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.discover-card{min-height:245px;padding:14px 10px 12px}.discover-card-logo{width:70px;height:70px;margin:18px auto 14px}.discover-card h3{font-size:13px}.discover-card-metrics{gap:8px;font-size:7px}.discover-card-metrics b{font-size:11px}.discover-modal-backdrop{padding:12px}.discover-modal{padding:23px 17px 20px;max-height:calc(100dvh - 24px)}.discover-modal-brand{width:92px;height:92px;margin:21px auto 14px}}
+@media(prefers-reduced-motion:reduce){.discover-card,.discover-modal-backdrop,.discover-modal{animation:none;transition:none;will-change:auto}}@media(prefers-reduced-motion:reduce){.discover-card{animation:none;transition:none}.discover-modal-backdrop,.discover-modal{animation:none}}
+@media(prefers-reduced-motion:reduce){.discover-card,.discover-modal-close{transition:none}}
+
+@media(min-width:821px){.discover-card:nth-child(5n+1){transform:rotate(-1.5deg) translateY(5px)}.discover-card:nth-child(5n+2){transform:rotate(-.7deg) translateY(1px)}.discover-card:nth-child(5n+3){transform:translateY(-3px)}.discover-card:nth-child(5n+4){transform:rotate(.7deg) translateY(1px)}.discover-card:nth-child(5n){transform:rotate(1.5deg) translateY(5px)}}
+
+
+/* Discover VAs: responsive standalone card grid. */
+.discover-deck{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));align-items:stretch;gap:16px;max-width:1320px;margin:0 auto}
+.discover-card{position:relative;left:auto;bottom:auto;width:auto;height:auto;min-height:275px;margin:0;transform:none;z-index:1}
+.discover-card:hover,.discover-card:focus-visible{z-index:2;transform:translateY(-7px) scale(1.015)}
+@media(max-width:1100px){.discover-deck{grid-template-columns:repeat(4,minmax(0,1fr));gap:13px}}
+@media(max-width:820px){.discover-deck{grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}.discover-card{min-height:255px}}
+@media(max-width:560px){.discover-deck{grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.discover-card{min-height:245px}}
+@media(max-width:360px){.discover-deck{grid-template-columns:1fr}.discover-card{min-height:230px}}
+@media(prefers-reduced-motion:reduce){.discover-card{animation:none;transition:none}}
